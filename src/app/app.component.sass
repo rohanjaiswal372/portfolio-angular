@@ -1,12 +1,14 @@
-.main
-    height: 100vh
+h2
+    font-size:70px
+h1
+    font-size: 100px
+p
+    font-size:30px
+    color: rgba(255,255,255,.5)
 
-section
-    display:block
-
-.navbar
+.navbar .nav-item>a
     color: white
-
+    
 .navbar-brand
     color: white
     font-family: 'Raleway Dots', cursive
@@ -16,13 +18,52 @@ section
     font-family: 'Rajdhani', sans-serif
     font-size:20px
 
+.fixed-top 
+    position: fixed
+    top: 0
+    right: 10%
+    left: 10%
+    z-index: 1030
+
+section 
+    height: 100vh
+    font-family: 'Rajdhani', sans-serif
+
 .jumbotron
     background-color: #000
     color: white
     text-align: center
-    font-family: 'Rajdhani', sans-serif
-    h1
-        font-size:100px
+
+.entry-content > li
+    color: rgba(255,255,255,.5)
+    font-size: 30px
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) 
+    .navbar-nav 
+        flex-direction: row
+
+    .navbar-brand
+        font-size: 22px
+
+    .nav-item
+        font-size:12px
+        padding-right: 20px
+    
+    section
+        height: 100%
+
+
+ 
+
+// Small devices (landscape phones, less than 768px)
+//@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) { ... }
 
 
 .list-group-item
