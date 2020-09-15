@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { MailService } from './service/mail.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+  constructor(private mail: MailService){}
   title = 'portfolio';
   contactForm: FormGroup;
   onSuccess = false;
@@ -22,9 +25,9 @@ export class AppComponent {
   }
 
   onSubmit(){
+
     //do something
-    console.log(this.contactForm)
-    //http post request
+    this.mail.sendMail(this.contactForm.value);
     
     //if success
     if(true){
