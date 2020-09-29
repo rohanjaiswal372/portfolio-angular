@@ -1,9 +1,10 @@
-<div class="container pt-5">
+<div class="container">
+  <!-- Intro -->
   <section class="intro">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg mt-3 fixed">
+    <nav class="navbar navbar-expand-lg fixed">
       <a class="navbar-brand" >Rohan Jaiswal</a>
-      <ul class="nav navbar-nav ml-auto ">
+      <ul class="nav navbar-nav left">
         <li class="nav-item">
           <a class="nav-link" href="#work">Work </a>
         </li>
@@ -24,7 +25,7 @@
     </div>
   </section>
   <!-- Ion Media  -->
-  <section class="text-center" id="work">
+  <section id="work">
       <h2 class="company">ION Media Networks</h2>
 
       <p class="description">Ion Media is an American broadcasting company that owns and operates over 60 television stations in most major American markets, as well as a digital sub-channel through that group and a major commercial television network.</p>
@@ -41,7 +42,7 @@
       </div>
   </section>
   <!-- Cat Technology  -->
-  <section class="text-center">
+  <section>
       <h2 class="company">Cat Technology INC</h2>
 
       <p class="description">CAT Technology Inc. delivers digital transformation and technology services from ideation to execution, enabling clients to outperform the competition.</p>
@@ -57,7 +58,7 @@
       </div>
   </section>
   <!-- Esprit Business Solution -->
-  <section class="text-center">
+  <section>
       <h2 class="company">Esprit Business Solution</h2>
 
       <p class="description">Esprit Business Solution provides you with the tools to control business processes, gather reporting and analytical data that can help you make well informed decisions in a timely manner.</p>
@@ -74,7 +75,7 @@
   </section>
   <!-- Contact me  -->
   <section id="contact">
-    <div class="contact text-center mx-auto">
+    <div class="contact mx-auto">
       <h2 class="text-white ">Contact Me</h2>
       
       <div *ngIf="onSuccess" class="on-success">Thank you for reaching out to me.</div>
@@ -95,7 +96,7 @@
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea name="message" class="form-control" id="message" formControlName="message" rows="10" cols="30"></textarea>
+          <textarea name="message" class="form-control" id="message" formControlName="message" rows="4" cols="30"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

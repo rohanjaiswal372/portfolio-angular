@@ -1,52 +1,72 @@
+// common
+* 
+  box-sizing: border-box
+
 h2
-    font-size:70px
+    font-size:5vw
 h1
-    font-size: 100px
+    font-size: 6.5vw
 p
     font-size:30px
     color: rgba(255,255,255,.5)
 
 section
     height: 100vh
+    width: 100%
+    margin: 4rem 0rem
     font-family: 'Rajdhani', sans-serif
+    text-align: center
 
-.navbar .nav-item>a
-    color: white
+//end common
+
+// intro
+.navbar 
+    width: 100%
+    .left
+        margin-left: 40vw!important
+.nav-item
+    a
+        color: white
+        font-size:2vw
+        padding: 0 1vw
     
 .navbar-brand
     color: white
     font-family: 'Raleway Dots', cursive
-    font-size: 40px
+    font-size:2.5vw
 
 .nav-item
     font-family: 'Rajdhani', sans-serif
-    font-size:20px
-
-
 
 .jumbotron
     background-color: #000
     color: white
     text-align: center
+//end intro
 
 // work
 .entry-content > li
     color: rgba(255,255,255,.5)
-    font-size: 30px
+    font-size: 2vw
 .company
     color: #fff
 .description
-    padding: 30px 0
+    padding: 1.5vw 0
 .technologies
-    font-size: 25px
+    font-size: 1.5vw
 .responsiblities
-    padding: 40px 0
+    padding: 2.5vw 0
+    li
+        padding: 0.5vw 0
+        
+//end work
 
+//contact
 .contact
     background-color: #8080801f
-    border-radius: 10px
-    padding: 40px 40px
-    margin-bottom: 50px
+    border-radius: 1vw
+    padding: 4vw 4vw
+    margin-bottom: 5vw
     color: white
     width: 50%
 
@@ -56,17 +76,24 @@ section
 .on-error
     color: red
 
+.list-group-item
+    background-color:#000
+
+.page-section
+    position: relative
+//end contact
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) 
     .navbar-nav 
         flex-direction: row
 
     .navbar-brand
-        font-size: 22px
+        font-size: 22vw
 
     .nav-item
-        font-size:12px
-        padding-right: 20px
+        font-size:12vw
+        padding-right: 20vw
     
     section
         height: 100%
@@ -81,8 +108,3 @@ section
 //@media (max-width: 991.98px) { ... }
 
 
-.list-group-item
-    background-color:#000
-
-.page-section
-    position: relative

@@ -2,6 +2,7 @@
 # Introduction
 
 The body of your message.
+
 {{$data['name']}}
 
 @component('mail::button', ['url' => ''])
