@@ -10,6 +10,9 @@ p
     font-size:30px
     color: rgba(255,255,255,.5)
 
+mobile-nav
+    display: hidden
+
 section
     height: 100vh
     width: 100%
@@ -24,11 +27,12 @@ section
     width: 100%
     .left
         margin-left: 40vw!important
-.nav-item
-    a
-        color: white
-        font-size:2vw
-        padding: 0 1vw
+.nav-link
+    color: white
+    font-size:2vw
+    padding: 0 1vw
+    font-family: 'Rajdhani', sans-serif
+
     
 .navbar-brand
     color: white
@@ -84,27 +88,92 @@ section
 //end contact
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) 
-    .navbar-nav 
-        flex-direction: row
-
-    .navbar-brand
-        font-size: 22vw
-
-    .nav-item
-        font-size:12vw
-        padding-right: 20vw
-    
-    section
+@media (max-width: 575px) 
+    body 
         height: 100%
+        width: 100vh
+    section
+        height: 100vh
+        padding: 0 0
+        margin: 0 0
+        overflow: hidden
+    .intro
+        .mobile-nav
+            margin: 2vh 0
+            display: block
+            .nav-link
+            font-size: 5vw
+        .full-nav
+            display: none
+        .container
+            height: 100%
+            border: 1px solid
+            overflow: hidden
+        nav
+            .navbar-brand
+                font-size: 14vw
+                margin: 4vh 0
+        #para
+            padding: 3vw 0
+            h1
+                font-size: 8vw
+            ul
+                padding: 3vw 0 
 
+    .work
+        h2
+            margin: 8vw
+            font-size:8vw
+        .description 
+            margin: 2vw 
+            font-size: 4vw
+            padding: 0 0
+        .technologies
+            margin: 2vw 
+            font-size: 2vw
+        .responsiblities
+            margin: 2vw 
+            ul
+                li
+                    font-size: 3vw
+
+    .contact
+        margin: 8vw auto 
+        width: 80%
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) 
+    body 
+        height: 100%
+        width: 100vh
+    //navigation bar
+    .section
+        height: 100vh
+        width: 100vh
+    .mobile-nav
+        display: block
+        .nav-link
+            font-size: 5vw
+    .full-nav
+        display: none
+
+    .container
+        height: 100%
+        border: 1px solid
+        overflow: hidden
+    .intro
+        nav
+            .navbar-brand
+                font-size: 14vw
+                margin-right: 0rem
+    //intro
+    .jumbotron
+        h1
+            font-size: 7.5vw
 
  
 
-// Small devices (landscape phones, less than 768px)
-//@media (max-width: 767.98px) { ... }
-
 // Medium devices (tablets, less than 992px)
-//@media (max-width: 991.98px) { ... }
+//@media (max-width: 991px) {  }
 
 
