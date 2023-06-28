@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { MailService } from './service/mail.service';
-import { Observable } from 'rxjs';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,38 +6,25 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  constructor(private mail: MailService){}
+  constructor(){}
   title = 'portfolio';
-  contactForm: FormGroup;
-  onSuccess = false;
-  onError = false
 
-  ngOnInit() {
-    this.contactForm = new FormGroup({
-      name: new FormControl(null),
-      company: new FormControl(null),
-      email: new FormControl(null),
-      message: new FormControl(null),
-    });
-  }
+  ngOnInit() {}
 
-  onSubmit(){
-
-    //do something
-    this.mail.sendMail(this.contactForm.value);
-    
-    //if success
-    if(true){
-      this.onSuccess = true;
+  @HostListener('document:scroll', ['$event'])
+  reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
-    else{
-      this.onError = true;
-    }
-
-    setTimeout(()=>{                           
-      this.onSuccess = false;
-      this.onError = false;
-    }, 5000);
-
   }
 }

@@ -1,3 +1,335 @@
 /* You can add global styles to this file, and also import other style files */
 body
     background-color: #000
+
+* 
+  box-sizing: border-box
+body 
+    height: 100%
+    width: 100%
+    p
+        color: rgba(255,255,255,.5)
+section
+    font-family: 'Rajdhani', sans-serif
+    text-align: center
+    overflow: hidden
+
+mobile-nav
+    display: hidden
+
+.nav-link
+    color: white
+    font-size:2vw
+    font-family: 'Rajdhani', sans-serif
+.navbar-brand
+    color: white
+    font-family: 'Raleway Dots', cursive
+.navbar-brand:hover
+    color: red
+.nav-item
+    font-family: 'Rajdhani', sans-serif
+
+.jumbotron
+    background-color: #000
+    color: white
+    text-align: center
+
+// work
+.company
+    color: #fff
+.description
+    color: rgba(255,255,255,.5)
+.technologies
+    color: rgba(255,255,255,.5)
+.responsiblities
+    ul
+        li
+            color: rgba(255,255,255,.5)
+
+//contact
+.contact
+    background-color: #8080801f
+    border-radius: 1vw
+    padding: 4vw 4vw
+    margin-bottom: 5vw
+    color: white
+    width: 50%
+
+.on-success
+    color: green
+
+.on-error
+    color: red
+
+.list-group-item
+    background-color:#000
+
+.page-section
+    position: relative
+//end contact
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 600px) 
+    section
+        padding: 4vh 0 
+        margin: 0 0
+
+    .intro
+        height: 100vh
+        padding: 5vh 0 1vh 0
+        .mobile-nav
+            margin: 3vh 0
+            display: block
+        .full-nav
+            display: none
+        .container
+            height: 100%
+            border: 1px solid
+            overflow: hidden
+        nav
+            .navbar-brand
+                font-size: 14vw
+                margin: 4vh 0
+            .nav-link
+                font-size: 4vw
+        #para
+            padding: 2vh 0
+            h1
+                font-size: 6vw
+            ul
+                padding: 3vh 0 
+
+    .work
+        h2
+            margin: 8vw
+            font-size:8vw
+        .description 
+            margin: 2vw 
+            font-size: 4vw
+            padding: 0 0
+        .technologies
+            margin: 2vw 
+            font-size: 2vw
+        .responsiblities
+            margin: 2vw 
+            ul
+                li
+                    font-size: 3vw
+
+    .contact
+        margin: 8vw auto 
+        width: 80%
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 600px) 
+    .container
+        max-width:90%
+        section
+            padding: 0 0
+            margin: 0 0
+    
+    .intro
+        height: 100vh
+        .mobile-nav
+            margin: 2vh 0
+            display: block
+        .full-nav
+            display: none
+        .container
+            height: 100%
+            border: 1px solid
+            overflow: hidden
+        nav
+            .navbar-brand
+                font-size: 13vw
+                margin: 4vh 0 1vh 0
+            .row 
+                margin: 0 0
+        #para
+            padding: 4vw 0
+            .jumbotron
+                padding: 0 0
+                margin: 0 0
+                h1
+                    font-size: 8vw
+            ul
+                padding: 4vw 0 
+
+    .work
+        h2
+            margin: 8vw
+            font-size:8vw
+        .description 
+            margin: 1vw 
+            font-size: 3vw
+            padding: 0 0
+        .technologies
+            margin: 2vw 
+            font-size: 2vw
+        .responsiblities
+            margin: 1vw 
+            ul
+                li
+                    font-size: 2vw
+
+    .contact
+        margin: 8vw auto 
+        width: 80%
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 992px) 
+    .container
+        max-width:90%
+        section
+            padding: 3vh 0
+            margin: 0 0 0 0
+    .intro
+        height: 100vh
+        padding: 0 0 !important
+        margin: 0 0 5vh 0 !important
+        .mobile-nav
+            margin: 0
+            display: block
+        .full-nav
+            display: none
+        .container
+            height: 100%
+            border: 1px solid
+            overflow: hidden
+        nav
+            .navbar-brand
+                font-size: 11vw
+                margin: 0
+            .row 
+                margin: 0 0
+        #para
+            padding: 1vw 0
+            .jumbotron
+                padding: 0 0
+                margin: 0 0
+                h1
+                    font-size: 3vw
+            ul
+                padding: 1vw 0 
+
+    .work
+        h2
+            margin: 1vw
+            font-size:7vw
+        .description 
+            margin: 1vw 
+            font-size: 2.5vw
+            padding: 0 0
+        .technologies
+            margin: 1vw 
+            font-size: 1.5vw
+        .responsiblities
+            margin: 1vw 
+            ul
+                li
+                    font-size: 2vw
+
+    .contact
+        margin: 4vw auto 
+        width: 50%
+    
+    // Medium devices (tablets, less than 992px)
+@media (min-width: 1760px) 
+        #para
+            .jumbotron
+                h1
+                    font-size: 6vw !important
+
+.reveal
+  position: relative
+  transform: translateY(150px)
+  opacity: 0
+  transition: 1s all ease
+
+
+.reveal.active
+  transform: translateY(0)
+  opacity: 1
+
+svg 
+  font-family: 'Russo One', sans-serif
+  width: 100% 
+  height: 100%
+
+svg text 
+  text-transform: uppercase
+  animation: stroke 5s 1 alternate
+  stroke-width: 2
+  stroke: #ffffff
+  font-size: 140px
+
+@keyframes stroke 
+  0%   
+    fill: rgba(72,138,20,0) 
+    stroke: rgba(54,95,160,1)
+    stroke-dashoffset: 25% 
+    stroke-dasharray: 0 50% 
+    stroke-width: 2
+	
+  70%
+    fill: rgba(72,138,20,0) 
+    stroke: #ffffff
+  80%  
+    fill: #488acc14
+    stroke: #ffffff
+    stroke-width: 3 
+  100%
+    fill: #488acc14
+    stroke: rgba(54,95,160,0) 
+    stroke-dashoffset: -25% 
+    stroke-dasharray: 50% 0 
+    stroke-width: 0
+	
+.nav-link
+  font-family: 'Fira Mono', monospace
+  animation: glitch 1s linear infinite
+
+  &:before, &:after
+    content: attr(title)
+    position: absolute
+    left: 0
+
+  &:before
+    animation: glitchTop 1s linear infinite
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%)
+
+  &:after
+    animation: glitchBotom 1.5s linear infinite
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%)
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%)
+
+@keyframes glitch
+  2%,64%
+    transform: translate(2px, 0) skew(0deg)
+
+  4%,60%
+    transform: translate(-2px, 0) skew(0deg)
+
+  62%
+    transform: translate(0, 0) skew(5deg)
+
+@keyframes glitchTop
+  2%,64%
+    transform: translate(2px, -2px)
+
+  4%,60%
+    transform: translate(-2px, 2px)
+
+  62%
+    transform: translate(13px, -1px) skew(-13deg)
+
+@keyframes glitchBotom
+  2%,64%
+    transform: translate(-2px, 0)
+
+  4%,60%
+    transform: translate(-2px, 0)
+
+  62%
+    transform: translate(-22px, 5px) skew(21deg)
